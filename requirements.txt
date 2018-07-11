@@ -1,4 +1,6 @@
 flask
+imageio
 scipy
 numpy
 opencv-python
+python-telegram-bot

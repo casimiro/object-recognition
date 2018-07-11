@@ -1,7 +1,7 @@
 FROM petronetto/docker-python-deep-learning
 
 WORKDIR /code
-ADD api.py entrypoint.sh requirements.txt labels.txt /code/
+ADD bot.py api.py entrypoint.sh requirements.txt labels.txt /code/
 ADD ./bin/* /code/bin/
 ADD ./cfg/* /code/cfg/
 

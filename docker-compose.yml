@@ -2,12 +2,12 @@ version: '3'
 services:
   api:
     build: .
+    image: us.gcr.io/digital-integration/object-recognition:0.0.1
     expose:
       - "8180"
     ports:
       - "8180:8180"
     volumes:
-      - "./bin:/code/bin"
-      - "./cfg:/code/cfg"
+      - "./:/code"
     environment:
         DEBUG_MODE: "true"
